@@ -1,0 +1,27 @@
+# Python environment and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local database and SQLite temporary files
+db.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Local credentials and configuration
+.django-secret-key
+.env
+.env.*
+!.env.example
+.aws/
+
+# macOS and editor temporary files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Generated files for deployment
+staticfiles/
