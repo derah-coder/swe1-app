@@ -33,4 +33,6 @@ Open [the polls page](http://127.0.0.1:8000/polls/) or [Django admin](http://127
 
 ## Deployment
 
-AWS deployment is pending. Supply a separate `DJANGO_SECRET_KEY` environment variable, disable debug mode, and configure allowed hosts before deployment. Secret keys and local configuration files are excluded by `.gitignore`.
+AWS deployment uses the configuration in `.ebextensions/`. Supply a separate `DJANGO_SECRET_KEY` and set `DJANGO_ALLOWED_HOSTS` to the AWS hostname. Debug mode is disabled on AWS. Deployment creates the database, adds three example polls only when no polls exist, and collects static files.
+
+The single-server SQLite database lives outside the deployed code so ordinary deployments preserve votes. Replacing the server requires a database backup to keep its data. Secrets and local databases are excluded from Git.

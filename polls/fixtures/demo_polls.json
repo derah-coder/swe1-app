@@ -1,0 +1,134 @@
+[
+  {
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+      "question_text": "What’s your favorite programming language?",
+      "pub_date": "2026-10-07T21:28:57Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+      "question_text": "What’s your favorite season?",
+      "pub_date": "2026-10-07T22:39:25Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+      "question_text": "What’s your favorite phone brand?",
+      "pub_date": "2026-10-07T22:41:24Z"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "choice_text": "Python",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "choice_text": "JavaScript",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "choice_text": "Java",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "choice_text": "C++",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 5,
+    "fields": {
+      "question": 2,
+      "choice_text": "Summer",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 6,
+    "fields": {
+      "question": 2,
+      "choice_text": "Winter",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 7,
+    "fields": {
+      "question": 2,
+      "choice_text": "Fall",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 8,
+    "fields": {
+      "question": 2,
+      "choice_text": "Spring",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 9,
+    "fields": {
+      "question": 3,
+      "choice_text": "Apple (iPhone)",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 10,
+    "fields": {
+      "question": 3,
+      "choice_text": "Samsung",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 11,
+    "fields": {
+      "question": 3,
+      "choice_text": "Google (Pixel)",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 12,
+    "fields": {
+      "question": 3,
+      "choice_text": "Sony",
+      "votes": 0
+    }
+  }
+]
