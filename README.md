@@ -31,7 +31,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Open [the polls page](http://127.0.0.1:8000/polls/) or [Django admin](http://127.0.0.1:8000/admin/). Add questions and their choices through admin; the local database and sample polls are not included in Git.
+Open [the polls page](http://127.0.0.1:8000/polls/) or [Django admin](http://127.0.0.1:8000/admin/). Add questions and their choices through admin. The local database is excluded from Git; three example polls are included as deployment fixtures.
 
 ## Deployment
 
