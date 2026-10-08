@@ -25,3 +25,8 @@ db.sqlite3
 
 # Generated files for deployment
 staticfiles/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
