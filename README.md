@@ -4,6 +4,8 @@ A Django polls app for NYU SWE coursework, following tutorial Parts 1–4. Visit
 
 Built with Python 3.14 and Django 5.2.
 
+Live app: [AWS polls application](http://derah-swe1-app.us-east-1.elasticbeanstalk.com/polls/)
+
 ## Run locally
 
 From the project folder on macOS or Linux:
