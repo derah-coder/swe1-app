@@ -1,0 +1,32 @@
+language: python
+dist: noble
+python:
+  - "3.14"
+
+env:
+  global:
+    # Throwaway key so the tests can load settings; AWS uses its own secret key.
+    - DJANGO_SECRET_KEY=travis-ci-test-key-not-used-in-production
+
+install:
+  - pip install -r requirements-dev.txt
+
+script:
+  - black --check .
+  - flake8 .
+  - coverage run --source=mysite,polls manage.py test
+
+after_success:
+  - coveralls
+
+# AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are set in the Travis repository settings.
+deploy:
+  provider: elasticbeanstalk
+  edge: true
+  region: us-east-1
+  app: swe1-app
+  env: swe1-app-env
+  bucket: elasticbeanstalk-us-east-1-066118247922
+  wait_until_deployed: true
+  on:
+    branch: main
