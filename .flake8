@@ -1,0 +1,5 @@
+[flake8]
+# Match black's line length and skip checks that conflict with its formatting.
+max-line-length = 88
+extend-ignore = E203,E701
+extend-exclude = .venv,*/migrations/*

@@ -1,5 +1,8 @@
 # swe1-app
 
+[![Build Status](https://app.travis-ci.com/derah-coder/swe1-app.svg?branch=main)](https://app.travis-ci.com/github/derah-coder/swe1-app)
+[![Coverage Status](https://coveralls.io/repos/github/derah-coder/swe1-app/badge.svg?branch=main)](https://coveralls.io/github/derah-coder/swe1-app?branch=main)
+
 A Django polls app for NYU SWE coursework, following tutorial Parts 1–4. Visitors can choose a poll, vote, and view results. Polls and choices are managed through Django admin.
 
 Built with Python 3.14 and Django 5.2.
