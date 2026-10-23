@@ -17,7 +17,7 @@ script:
   - coverage run --source=mysite,polls manage.py test
 
 after_success:
-  - coveralls
+  - coveralls --service=travis-pro
 
 # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are set in the Travis repository settings.
 deploy:
